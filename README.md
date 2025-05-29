@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# F!ROSH 2T5 Tech Recruitment Coding Challenge
+### DUE: June 1st @11:59 PM EST
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thanks for your interest in joining the F!ROSH 2T5 Tech Team! 💜
 
-## Available Scripts
+We’ve prepared a short challenge for you to show off your web dev skills and eagerness to learn 😎. Please attempt to solve the challenge in this document, and submit your solution as a pull request (PR) to the challenge repo (this repo). Applications will be reviewed on a rolling basis, up to **June 1st @11:59 PM EST**.
 
-In the project directory, you can run:
+If you have any questions, contact us at [tech@orientation.skule.ca](mailto:tech@orientation.skule.ca)
 
-### `npm start`
+#### SETUP INSTRUCTIONS:
+1. Fork this repo and clone it to your local machine
+2. Ensure you have Node.js installed. If you do not, you can install it [here](https://nodejs.org/en)  
+3. Navigate to the project directory in the terminal 
+4. Run `npm install` to install the project dependencies
+5. Run `npm start` to start the development server. In your web browser, navigate to [http://localhost:3000](http://localhost:3000) to view the application. Initially the web page will be blank and will look like this:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="1464" alt="Screenshot 2025-05-25 at 10 58 45 PM" src="https://github.com/user-attachments/assets/f7df632b-2a98-458a-997b-b8824bed1fbc" />
 
-### `npm test`
+#### YOUR TASK:
+Make a responsive web page for the F!ROSH website that displays information about the F!ROSH Orientation Committee. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The provided data is in JavaScript Object Notation (JSON) format, in the  `src/members_details.json` file, and includes details like the name, position, and picture for each member. Feel free to look up resources and tutorials about JSON. 
 
-### `npm run build`
+Your goal is to create a visually appealing and responsive layout using React JS, CSS, and HTML. Again, if you do not have experience with React JS, that’s also okay! We want to see how quickly you can learn to use it. Feel free to look up any resources to help you with this task.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The goal of the website is to present users with introductory information about the Orientation Committee. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### SUBMISSION INSTRUCTIONS:
+1. Commit your changes to your forked repository 
+2. Create a pull request (PR) to the original repository; this will be your submission! Please ensure you use the provided template for the description of your PR.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**You’ve reached the end of the coding challenge!**
