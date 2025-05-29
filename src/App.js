@@ -48,7 +48,9 @@ function App() {
       - Have the proper text for each person become curved DONE
       - Position them relative to the pictures DONE
       - Change size/position relative to size of screen DONE FOR NAME
-      - Find a background that isn't uglyy DONE*/}
+      - Find a background that isn't uglyy DONE
+
+      - make position's curve and postion also responsive*/}
 
       <div className="flex_container">
         {data.map((item, index) => (
