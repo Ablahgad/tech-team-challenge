@@ -1,0 +1,188 @@
+/* Palette:
+    #fbfefc
+    #681d82
+    #3d0f58
+    #fdc601 
+*/
+
+.flex_container{
+    flex-direction:row;
+    flex-wrap:wrap;
+    display:flex;
+    justify-content: space-evenly;
+}
+.flex_item{
+    border-radius:100vw;
+
+    background-color: #120218;
+
+    border: #fbfefc;
+    border-width:5px;
+
+    outline:7px ridge #fdc601;
+}
+body {
+    /* background-image: linear-gradient(#2d073a, #4b0f5f); */
+    background-image: url('../public/texture.jpg');
+    background-size:800px;
+
+    text-align:center;
+    color:#2d073a;
+}
+img{
+    clip-path:circle();
+    object-fit:cover;
+}
+h1{
+    color:#fdc601;
+
+    margin-top:1.3vw;
+    padding:3vh;
+
+    letter-spacing:3px;
+    font-size:40px;
+    text-align:right;
+
+    display:inline;
+
+    text-shadow: -3px -3px 0 #120218, 3px -3px 0 #120218, -3px 3px 0 #120218, 3px 3px 0 #120218;
+}
+h2{
+    display:block;
+
+    color:#fdc601;
+    background-color:#120218;
+
+}
+svg{
+    width: 300px;
+    height:100px;
+    display:block;
+    margin:auto;
+
+    /* background: purple; */
+
+    position:relative;
+    z-index: 1000;
+
+    filter: drop-shadow( 5px 5px 5px rgba(18, 2, 24, 1));
+}
+text{
+    font-size:55px;
+    text-anchor:middle;
+    font-weight: 800;
+    
+
+    letter-spacing:1px;
+}
+.name{
+    position:relative;
+}
+textPath{
+    stroke:#fdc601;
+    stroke-width:3px;
+    fill:#120218;
+    
+}
+footer{
+    background-color: #120218;
+    padding:0.2vw;
+}
+p{
+    color:#fdc601;
+}
+#logo{
+    width:5%;
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+
+@media only screen and (max-width: 660px) {
+    img{
+        width: 75vw;
+        margin:2.5vw;
+    }
+    .flex_item{
+        width: 85vw;
+        height:82vw;
+
+        margin-bottom:5vw;
+        margin-top:5vw;
+
+        padding-top:3vw;
+        padding-bottom:3vw;
+    }
+    .name{
+        top:-84vw;
+    }
+    .position{
+        top:-36vw;
+    }
+}
+@media only screen and (min-width: 660px) {
+    img{
+        width:40vw;
+        margin:2vw;
+    }
+    .flex_item{
+        width:45vw;
+        height:42vw;
+
+        margin-bottom:5vw;
+        padding-bottom:3vw;
+        padding-top:1vw;
+    }
+    .name{
+        top:-45vw;
+    }
+    .position{
+        top:-29vw;
+    }
+}
+@media only screen and (min-width: 992px) {
+    img{
+        width:25vw;
+        margin:1vw;
+    }
+    .flex_item{
+        width:30vw;
+        height:29vw;
+        margin-top:2vw;
+        margin-bottom:2vw;
+
+        padding-bottom:0vw;
+        padding-top:2vw;
+    }
+    .name{
+        top:-28vw;
+    }
+    .position{
+        top:-18vw;
+    }
+} @media only screen and (max-width: 1150px) {
+    /* #topcurve{
+        d: path("M 0,260 A 200, 200 0 0,1 500, 260");
+        fill: black;
+    }
+    #botcurve{
+        d: path("M 100, -590 A 270, 270 0 1,0 400, -590");
+        fill: black;
+    } */
+} @media only screen and (min-width: 1260px) {
+    .position{
+        top:-14vw;
+    }
+} @media only screen and (min-width: 1400px) {
+    .position{
+        top:-13vw;
+    }
+}
+
+/* 
+1261--> move position up
+1154--> more curve in name and position
+550--> move position up
+*/

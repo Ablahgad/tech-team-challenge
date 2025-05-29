@@ -1,9 +1,9 @@
 # Applicant Information
 
 ### Name: 
-_Jane Doe_
+Ablah Gadallah
 ### Email:
-_jane.doe@example.com_
+ablahgad@gmail.com
 
-### Solution Description
-_Describe your solution briefly_
+### Solution Descriptionr
+Design inspired off of engineering patches, an iconic aspect of Skule culture. Experimented for the first time with SVG paths to curve the text, as well as useState and useEffect from React to make the webpage responsive.
