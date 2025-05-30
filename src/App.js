@@ -82,14 +82,6 @@ function App() {
       
       <h1>F!ROSH Orientation Committee</h1>
 
-      {/* - Draw the bottom curve DONE
-      - Have the proper text for each person become curved DONE
-      - Position them relative to the pictures DONE
-      - Change size/position relative to size of screen DONE FOR NAME
-      - Find a background that isn't uglyy DONE
-
-      - make position's curve and postion also responsive*/}
-
       <div className="flex_container">
         {data.map((item, index) => (
             <div className = "flex_item" key={index}>
