@@ -131,18 +131,25 @@ p{
         width:45vw;
         height:42vw;
 
-        margin-bottom:5vw;
+        margin-bottom:3vw;
+        margin-top:2vw;
         padding-bottom:3vw;
         padding-top:1vw;
     }
     .name{
-        top:-45vw;
+        top:-44vw;
     }
     .position{
-        top:-29vw;
+        top:-30vw;
     }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 760px) {
+    .position {
+        top:-23vw;
+    }
+}
+@media only screen and (min-width: 990px) {
+    
     img{
         width:25vw;
         margin:1vw;
@@ -162,18 +169,15 @@ p{
     .position{
         top:-18vw;
     }
-} @media only screen and (max-width: 1150px) {
-    /* #topcurve{
-        d: path("M 0,260 A 200, 200 0 0,1 500, 260");
-        fill: black;
-    }
-    #botcurve{
-        d: path("M 100, -590 A 270, 270 0 1,0 400, -590");
-        fill: black;
-    } */
-} @media only screen and (min-width: 1260px) {
+}
+@media only screen and (min-width:1150px) {
     .position{
-        top:-14vw;
+        top:-15vw;
+    }
+}
+@media only screen and (min-width: 1260px) {
+    .position{
+        top:-16vw;
     }
 } @media only screen and (min-width: 1400px) {
     .position{
@@ -181,8 +185,3 @@ p{
     }
 }
 
-/* 
-1261--> move position up
-1154--> more curve in name and position
-550--> move position up
-*/

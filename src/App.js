@@ -3,12 +3,12 @@ import './App.css';
 import data from './members_details.json'
 import { useEffect, useState } from 'react';
 
-const ResponsiveSVGText = ({ name }) => {
-  const [pathD, setPathD] = useState(getPathD(window.innerWidth));
+const CreateName = ({ name }) => {
+  const [Top, setTop] = useState(getTop(window.innerWidth));
 
   useEffect(() => {
     const handleResize = () => {
-      setPathD(getPathD(window.innerWidth));
+      setTop(getTop(window.innerWidth));
     };
 
     window.addEventListener('resize', handleResize);
@@ -16,19 +16,19 @@ const ResponsiveSVGText = ({ name }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  function getPathD(width) {
+  function getTop(width) {
     if (width < 660) {
-      return 'M 0,130 A 350,350 0 0,1 500,130'; // more curve
+      return 'M 0,130 A 350,350 0 0,1 500,130';
     } else if (width < 1150) {
-      return 'M 0,260 A 200,200 0 0,1 500,260'; // medium curve
+      return 'M 0,260 A 200,200 0 0,1 500,260';
     } else {
-      return 'M 0,130 A 330,330 0 0,1 500,130'; // default curve
+      return 'M 0,130 A 330,330 0 0,1 500,130';
     }
   }
 
   return (
     <svg className="name" viewBox="0 0 500 100">
-      <path id="topcurve" d={pathD} fill="transparent" />
+      <path id="topcurve" d={Top} fill="transparent" />
       <text>
         <textPath href="#topcurve" startOffset="50%">
           {name}
@@ -36,6 +36,44 @@ const ResponsiveSVGText = ({ name }) => {
       </text>
     </svg>
   );
+};
+
+const CreatePos = ({ position }) => {
+  const [Bot, setBot] = useState(getBot(window.innerWidth));
+
+  useEffect(() => {
+    const handleResize = () => {
+      setBot(getBot(window.innerWidth));
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  function getBot(width) {
+    if (width < 660) {
+      return  "M 100,-600 A 370, 370 0 1,0 400,-600";
+    }else if (width < 1150){
+      return  "M 100,-410 A 280, 280 0 1,0 400,-410";
+    } else if (width < 1260) {
+      return  "M 100,-510 A 320, 320 0 1,0 400,-510";
+    } else {
+      return "M 100,-590 A 370, 370 0 1,0 400,-590";
+    }
+  }
+  return (
+    <svg className="position" viewBox='0 0 500 100'>
+      <path id="botcurve" d={Bot} fill="transparent"/>
+        <text>
+          <textPath href="#botcurve" startOffset="50%">
+            {position}
+          </textPath>
+        </text>
+    </svg>
+
+  );
+
 };
 
 function App() {
@@ -54,22 +92,15 @@ function App() {
 
       <div className="flex_container">
         {data.map((item, index) => (
-             <div className = "flex_item" key={index}>
+            <div className = "flex_item" key={index}>
 
-               <img src={item.picture}></img>
+              <img src={item.picture}></img>
 
-                <ResponsiveSVGText name = {item.name}/>
+              <CreateName name = {item.name}/>
 
-                <svg className="position" viewBox='0 0 500 100'>
-                  <path id="botcurve" d="M 100, -590 A 370, 370 0 1,0 400, -590" fill="transparent"/>
-                    <text>
-                      <textPath href="#botcurve" startOffset="50%">
-                        {item.position}
-                      </textPath>
-                    </text>
-                </svg>
+              <CreatePos position = {item.position}/>
 
-             </div>
+            </div>
            ))}
       </div>
 
